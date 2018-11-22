@@ -15,6 +15,7 @@
     <PackageReference Include="Hangfire" Version="1.6.21" />
     <PackageReference Include="Microsoft.Owin" Version="4.0.0" />
     <PackageReference Include="Hangfire.MySql.Core" Version="2.1.8" />
+    <PackageReference Include="Hangfire.Mongo" Version="0.5.12" />
   </ItemGroup>
 
 </Project>

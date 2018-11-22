@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
+using RestSharp;
 namespace ApplicationServer.Controllers
 {
     [Route("api/[controller]")]
@@ -18,10 +18,10 @@ namespace ApplicationServer.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
+        [HttpGet("asp")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            return richsurvey();
         }
 
         // POST api/values
@@ -41,5 +41,21 @@ namespace ApplicationServer.Controllers
         public void Delete(int id)
         {
         }
+        public string richsurvey()
+        {
+            var client = new RestClient("http://richsurvey.herokuapp.com");
+            // client.Authenticator = new HttpBasicAuthenticator(username, password);
+
+            var request = new RestRequest("asp", Method.GET);
+            request.AddQueryParameter("time", DateTime.Today.ToLongDateString());
+
+
+
+            IRestResponse response = client.Execute(request);
+            var content = response.Content; // raw content as string
+            Console.WriteLine(content);
+             return content;
+        }
     }
+
 }
