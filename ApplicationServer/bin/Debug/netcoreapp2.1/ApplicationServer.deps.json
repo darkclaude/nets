@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "0651f7ee5a3a2d3009f094c0b57f7302a4540d2d"
+    "signature": "0980b1fdd9a6d43498e360967b7a4870c5bf8109"
   },
   "compilationOptions": {
     "defines": [
@@ -25,6 +25,7 @@
       "ApplicationServer/1.0.0": {
         "dependencies": {
           "Hangfire": "1.6.21",
+          "Hangfire.MySql.Core": "2.1.8",
           "JSON": "1.0.1",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
@@ -38,35 +39,20 @@
           "ApplicationServer.dll": {}
         }
       },
-      "Dapper/1.50.1": {
+      "Dapper/1.50.5": {
         "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Collections.Concurrent": "4.3.0",
-          "System.Collections.NonGeneric": "4.3.0",
           "System.Data.SqlClient": "4.5.1",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
           "System.Reflection.Emit.Lightweight": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Text.RegularExpressions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Xml.XDocument": "4.3.0",
-          "System.Xml.XmlDocument": "4.3.0"
+          "System.Reflection.TypeExtensions": "4.4.0"
         },
         "runtime": {
-          "lib/netstandard1.3/Dapper.dll": {
-            "assemblyVersion": "1.50.1.0",
-            "fileVersion": "1.50.1.0"
+          "lib/netstandard2.0/Dapper.dll": {
+            "assemblyVersion": "1.50.5.0",
+            "fileVersion": "1.50.5.0"
           }
         },
         "compile": {
-          "lib/netstandard1.3/Dapper.dll": {}
+          "lib/netstandard2.0/Dapper.dll": {}
         }
       },
       "Hangfire/1.6.21": {
@@ -126,9 +112,27 @@
           "lib/netstandard1.3/Hangfire.Core.dll": {}
         }
       },
+      "Hangfire.MySql.Core/2.1.8": {
+        "dependencies": {
+          "Dapper": "1.50.5",
+          "Hangfire.Core": "1.6.21",
+          "Microsoft.CSharp": "4.5.0",
+          "MySqlConnector": "0.45.1",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Hangfire.MySql.Core.dll": {
+            "assemblyVersion": "2.1.8.0",
+            "fileVersion": "2.1.8.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Hangfire.MySql.Core.dll": {}
+        }
+      },
       "Hangfire.SqlServer/1.6.21": {
         "dependencies": {
-          "Dapper": "1.50.1",
+          "Dapper": "1.50.5",
           "Hangfire.Core": "1.6.21",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
           "NETStandard.Library": "2.0.3",
@@ -358,6 +362,17 @@
           "lib/net451/Microsoft.Owin.dll": {}
         }
       },
+      "MySqlConnector/0.45.1": {
+        "runtime": {
+          "lib/netcoreapp2.1/MySqlConnector.dll": {
+            "assemblyVersion": "0.45.1.0",
+            "fileVersion": "0.45.1.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/MySqlConnector.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
@@ -402,6 +417,7 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+      "System.Reflection.TypeExtensions/4.4.0": {},
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
@@ -1688,7 +1704,7 @@
           "System.Collections": "4.3.0",
           "System.IO": "4.3.0",
           "System.IO.FileSystem": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Runtime.Extensions": "4.3.0",
           "System.Runtime.InteropServices": "4.3.0",
           "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
@@ -2573,7 +2589,7 @@
           "System.Reflection.Emit": "4.3.0",
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -2708,7 +2724,7 @@
           "System.Reflection.Emit.Lightweight": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -2804,7 +2820,7 @@
           "System.Reflection.Emit.Lightweight": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -2874,13 +2890,6 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0",
           "Microsoft.NETCore.Targets": "2.1.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compileOnly": true
-      },
-      "System.Reflection.TypeExtensions/4.3.0": {
-        "dependencies": {
-          "System.Reflection": "4.3.0",
           "System.Runtime": "4.3.0"
         },
         "compileOnly": true
@@ -3306,7 +3315,7 @@
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -3353,12 +3362,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Dapper/1.50.1": {
+    "Dapper/1.50.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-d00Wvqd5xsMwSdNuzLYtmxxTrI8etG02P1rzGYRPZNBKMc7PdxyrU4/sRhEffDCCfLqqJ2wyha7pghPI0I3vHQ==",
-      "path": "dapper/1.50.1",
-      "hashPath": "dapper.1.50.1.nupkg.sha512"
+      "sha512": "sha512-AzAdZ9fEzUtav3Sbc5CMgz5O2oYkc5g1r+g1h/Vn+wqcInII+xtNEfyZryeW90Wq72bxjEBJhe18j+2SrGrc5A==",
+      "path": "dapper/1.50.5",
+      "hashPath": "dapper.1.50.5.nupkg.sha512"
     },
     "Hangfire/1.6.21": {
       "type": "package",
@@ -3380,6 +3389,13 @@
       "sha512": "sha512-Jr4EnUAQ9AedOVkS9iR5lUxc7KLDnPmkyHPaowJ3x4KYOxmpFO9WXDtEzXaIyQLxrJ0k30+tVwxjB/5IA3c6wg==",
       "path": "hangfire.core/1.6.21",
       "hashPath": "hangfire.core.1.6.21.nupkg.sha512"
+    },
+    "Hangfire.MySql.Core/2.1.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pRZ9s1VQqYMIyB+NFlh4UjFFmtJ/LYHPiaXixt1TLMr1pNq5D5/n8uCbJ5cfuNiQjn+sCJNda6iNk69SwFEdHg==",
+      "path": "hangfire.mysql.core/2.1.8",
+      "hashPath": "hangfire.mysql.core.2.1.8.nupkg.sha512"
     },
     "Hangfire.SqlServer/1.6.21": {
       "type": "package",
@@ -3472,6 +3488,13 @@
       "path": "microsoft.owin/4.0.0",
       "hashPath": "microsoft.owin.4.0.0.nupkg.sha512"
     },
+    "MySqlConnector/0.45.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-x+k3MJREEsIO2XXXcHaURlmDj0aIaM84I/p9cb1Tuz1bPoKnfkAH6rU4K2+onR/s/R/vBJgZhCN5kdF13IlANA==",
+      "path": "mysqlconnector/0.45.1",
+      "hashPath": "mysqlconnector.0.45.1.nupkg.sha512"
+    },
     "NETStandard.Library/2.0.3": {
       "type": "package",
       "serviceable": true,
@@ -3506,6 +3529,13 @@
       "sha512": "sha512-DeahGetUucjHvnBefS9NPhnkQunFmJ/DEI+88kHe49Grj8jUW2VYI8O+fI4N24zyHDF78qMUT74/WLWlD9KKeA==",
       "path": "system.data.common/4.1.0",
       "hashPath": "system.data.common.4.1.0.nupkg.sha512"
+    },
+    "System.Reflection.TypeExtensions/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JRxOAH6by+wn1gNnZc9jf2HbO/szhMJuLY2w44nEW77354WntXlFzWSVkx6280Uvcl3URZ/At+444vjX0/X1Aw==",
+      "path": "system.reflection.typeextensions/4.4.0",
+      "hashPath": "system.reflection.typeextensions.4.4.0.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
@@ -5095,13 +5125,6 @@
       "sha512": "sha512-5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
       "path": "system.reflection.primitives/4.3.0",
       "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
-    },
-    "System.Reflection.TypeExtensions/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7u6ulLcZbyxB5Gq0nMkQttcdBTx57ibzw+4IOXEfR+sXYQoHvjW5LTLyNr8O22UIMrqYbchJQJnos4eooYzYJA==",
-      "path": "system.reflection.typeextensions/4.3.0",
-      "hashPath": "system.reflection.typeextensions.4.3.0.nupkg.sha512"
     },
     "System.Resources.ResourceManager/4.3.0": {
       "type": "package",

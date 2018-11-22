@@ -10,7 +10,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Hangfire;
 namespace ApplicationServer
 {
     public class Startup
@@ -25,11 +24,7 @@ namespace ApplicationServer
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHangfire(Configuration =>
-            {
-              //  Configuration.UseSqlServerStorage("")
-                Configuration.UseSqlServerStorage("Server = tcp:richpay.database.windows.net,1433; Initial Catalog = nets; Persist Security Info = False; User ID = { nkid299 }; Password ={ ninjax12@ }; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False;  Connection Timeout = 30;");
-            }); 
+           
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
