@@ -13,10 +13,10 @@ namespace ApplicationServer.Controllers
     {
         // GET: api/values
         [HttpGet]
-        public IEnumerable<string> Get([FromQuery] String q,[FromQuery] String s)
+        public IEnumerable<string> Get([FromQuery] string q,[FromQuery] string s, [FromQuery] string r)
         {
             Console.WriteLine(q);
-            return new string[] { q, s };
+            return new string[] { q, s , r};
         }
 
         // GET api/values/5
