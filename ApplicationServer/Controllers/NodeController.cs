@@ -16,7 +16,7 @@ namespace ApplicationServer.Controllers
         public IEnumerable<string> Get([FromQuery] string q,[FromQuery] string s, [FromQuery] string r)
         {
             Console.WriteLine(q);
-            return new string[] { q, s , r};
+            return new string[] { q, s , (int.Parse(r)*5).ToString()};
         }
 
         // GET api/values/5
