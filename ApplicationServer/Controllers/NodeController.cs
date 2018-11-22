@@ -20,10 +20,10 @@ namespace ApplicationServer.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
+        [HttpGet("/test")]
         public string Get(int id)
         {
-            return "value";
+            return "ITS VERKS";
         }
 
         // POST api/values

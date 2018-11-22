@@ -11530,11 +11530,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Hamid/Projects/ApplicationServer/ApplicationServer/ApplicationServer.csproj",
+      "projectUniqueName": "/Users/Hamid/Projects/nets/ApplicationServer/ApplicationServer.csproj",
       "projectName": "ApplicationServer",
-      "projectPath": "/Users/Hamid/Projects/ApplicationServer/ApplicationServer/ApplicationServer.csproj",
+      "projectPath": "/Users/Hamid/Projects/nets/ApplicationServer/ApplicationServer.csproj",
       "packagesPath": "/Users/Hamid/.nuget/packages/",
-      "outputPath": "/Users/Hamid/Projects/ApplicationServer/ApplicationServer/obj",
+      "outputPath": "/Users/Hamid/Projects/nets/ApplicationServer/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
