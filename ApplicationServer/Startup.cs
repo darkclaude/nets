@@ -32,8 +32,8 @@ namespace ApplicationServer
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
 
-            app.UseHangfireServer();
-            app.UseHangfireDashboard();
+          //  app.UseHangfireServer();
+          //  app.UseHangfireDashboard();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
