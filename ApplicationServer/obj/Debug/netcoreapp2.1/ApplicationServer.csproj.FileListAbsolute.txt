@@ -1,0 +1,14 @@
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/bin/Debug/netcoreapp2.1/ApplicationServer.deps.json
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/bin/Debug/netcoreapp2.1/ApplicationServer.runtimeconfig.json
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/bin/Debug/netcoreapp2.1/ApplicationServer.runtimeconfig.dev.json
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/bin/Debug/netcoreapp2.1/ApplicationServer.dll
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/bin/Debug/netcoreapp2.1/ApplicationServer.pdb
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/obj/Debug/netcoreapp2.1/ApplicationServer.csprojAssemblyReference.cache
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/obj/Debug/netcoreapp2.1/ApplicationServer.csproj.CoreCompileInputs.cache
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/obj/Debug/netcoreapp2.1/ApplicationServer.RazorAssemblyInfo.cache
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/obj/Debug/netcoreapp2.1/ApplicationServer.RazorAssemblyInfo.cs
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/obj/Debug/netcoreapp2.1/ApplicationServer.AssemblyInfoInputs.cache
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/obj/Debug/netcoreapp2.1/ApplicationServer.AssemblyInfo.cs
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/obj/Debug/netcoreapp2.1/ApplicationServer.RazorTargetAssemblyInfo.cache
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/obj/Debug/netcoreapp2.1/ApplicationServer.dll
+/Users/Hamid/Projects/ApplicationServer/ApplicationServer/obj/Debug/netcoreapp2.1/ApplicationServer.pdb
