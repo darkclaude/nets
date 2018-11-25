@@ -42,7 +42,7 @@ namespace ApplicationServer
             GlobalConfiguration.Configuration.UseMongoStorage("mongodb://nets:nets123@ds117719.mlab.com:17719/heroku_x7jqwmcx", "heroku_x7jqwmcx");
             app.UseHangfireServer();
             app.UseHangfireDashboard();
-            RecurringJob.AddOrUpdate(() => richsurvey(), "*/1 * * * *");
+            RecurringJob.AddOrUpdate(() => richsurvey(false), "*/1 * * * *");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -56,18 +56,21 @@ namespace ApplicationServer
             app.UseMvc();
         }
 
-        public void richsurvey(){
-            var client = new RestClient("http://richsurvey.herokuapp.com");
-            // client.Authenticator = new HttpBasicAuthenticator(username, password);
+        public void richsurvey(bool enable){
+            if (enable)
+            {
+                var client = new RestClient("http://richsurvey.herokuapp.com");
+                // client.Authenticator = new HttpBasicAuthenticator(username, password);
 
-            var request = new RestRequest("asp", Method.GET);
-            request.AddQueryParameter("time", DateTime.Today.ToLongDateString());
+                var request = new RestRequest("asp", Method.GET);
+                request.AddQueryParameter("time", DateTime.Today.ToLongDateString());
 
 
 
-            IRestResponse response = client.Execute(request);
-            var content = response.Content; // raw content as string
-            Console.WriteLine(content);
+                IRestResponse response = client.Execute(request);
+                var content = response.Content; // raw content as string
+                Console.WriteLine(content);
+            }
 
         }
     }
